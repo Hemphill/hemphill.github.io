@@ -1,0 +1,4 @@
+hemphill.github.io
+==================
+
+Blog
