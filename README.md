@@ -1,4 +1,5 @@
-hemphill.github.io
-==================
+Greg Hemphill's Blog
+====================
 
-Blog
+#### Found at:
+http://hemphill.github.io
