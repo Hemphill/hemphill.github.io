@@ -13,6 +13,9 @@ __/\\\________/\\\___________________________________________________/\\\_______
 Greg Hemphill's Blog
 */
 
+/* scaffolding */
+
+
 
 /* Typography
    ---------- */
@@ -68,6 +71,19 @@ i, em, .italic {
   font-style: normal;
   font-family: 'LibreBaskervilleItalic', 'Georgia Pro', georgia, serif;
 }
+
+/* all combinations of bold and italic being inside each other */
+b i, b em, b .italic, 
+strong i, strong em, strong .italic, 
+.bold i, .bold em, .bold .italic, 
+i strong, i b, i .bold, 
+em strong, em b, em .bold,
+.italic strong, .italic b, .italic .bold {
+  font-weight: bold;
+  font-style: normal;
+  font-family: 'LibreBaskervilleItalic', 'Georgia Pro', georgia, serif;
+}
+
 
 /* Headings 
    -------- */
@@ -139,7 +155,8 @@ h6:before {
 }
 
 
-/* Lists */
+/* Lists 
+   ----- */
 ul {
   margin-left: -0.5rem;
 }
@@ -161,18 +178,58 @@ blockquote {
   border-left: .5rem solid #e5e5e5;
 }
 
-/*code {
-  color: #333;
-}*/
-
+/* code
+   ---- */
 pre {
   font-size: 1.6rem;
-  padding-left: 1.7rem;
+  /*padding-left: 1.7rem;*/
   padding-right: 1.7rem;
-  margin-left: -1.7rem;
+  margin-left: -5rem;
   margin-right: -1.7rem;
+  border: 0;
+  background: #f9f9f9;
+}
+/*.container {
+  border-left: 1px solid #333;
+}*/
+
+.lineno {
+ width: 32px;
+ /*padding-right: 5px;
+ border-right: 1px solid #ccc;*/
+ display: inline-block;
+ white-space: nowrap;
+ text-align: right;
+ color: #ccc;
 }
 
+/* Posts 
+   ----- */
+
+.articles article {
+  padding-bottom: 30px;
+  margin-bottom: 90px;
+  border-bottom: 4px double #eee;
+}
+article {
+  margin: 0 auto;
+  max-width: 696px;
+}
+article .title {
+  margin-bottom: 0;
+}
+.author,
+.published_on {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 1.4rem;
+}
+.by_line {
+  margin-bottom: 20px;
+  font-family: 'LibreBaskervilleItalic', 'Georgia Pro', georgia, serif;
+  font-size: 1.4rem;
+}
 
 /* Responsive
    ---------- */
