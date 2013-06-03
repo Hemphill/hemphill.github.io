@@ -1,14 +1,14 @@
+/*******************
+ * _blog.scss file *
+ *******************
 
-/*
-__/\\\________/\\\___________________________________________________/\\\________________/\\\\\\_____/\\\\\\____        
- _\/\\\_______\/\\\__________________________________________________\/\\\_______________\////\\\____\////\\\____       
-  _\/\\\_______\/\\\______________________________________/\\\\\\\\\__\/\\\__________/\\\____\/\\\_______\/\\\____      
-   _\/\\\\\\\\\\\\\\\_____/\\\\\\\\_____/\\\\\__/\\\\\____/\\\/////\\\_\/\\\_________\///_____\/\\\_______\/\\\____     
-    _\/\\\/////////\\\___/\\\/////\\\__/\\\///\\\\\///\\\_\/\\\\\\\\\\__\/\\\\\\\\\\___/\\\____\/\\\_______\/\\\____    
-     _\/\\\_______\/\\\__/\\\\\\\\\\\__\/\\\_\//\\\__\/\\\_\/\\\//////___\/\\\/////\\\_\/\\\____\/\\\_______\/\\\____   
-      _\/\\\_______\/\\\_\//\\///////___\/\\\__\/\\\__\/\\\_\/\\\_________\/\\\___\/\\\_\/\\\____\/\\\_______\/\\\____  
-       _\/\\\_______\/\\\__\//\\\\\\\\\\_\/\\\__\/\\\__\/\\\_\/\\\_________\/\\\___\/\\\_\/\\\__/\\\\\\\\\__/\\\\\\\\\_ 
-        _\///________\///____\//////////__\///___\///___\///__\///__________\///____\///__\///__\/////////__\/////////__
+______  __                       ______ ________________
+___  / / /___________ ______________  /____(_)__  /__  /
+__  /_/ /_  _ \_  __ `__ \__  __ \_  __ \_  /__  /__  / 
+_  __  / /  __/  / / / / /_  /_/ /  / / /  / _  / _  /  
+/_/ /_/  \___//_/ /_/ /_/_  .___//_/ /_//_/  /_/  /_/   
+                         /_/                            
+
 
 Greg Hemphill's Blog
 */
@@ -88,72 +88,86 @@ em strong, em b, em .bold,
 /* Headings 
    -------- */
 
+
+article {
+  h1 {
+    font-weight: bold;
+  }
+}
+
 /* Exposed Markdown inspired by Mark Otto's blog http://markdotto.com */
-h1, h2, h3, h4, h5, h6 {
-  position: relative;
-  color: #111;
-  text-rendering: optimizeLegibility;
-}
-h1:before,
-h2:before,
-h3:before,
-h4:before,
-h5:before,
-h6:before {
-  position: absolute;
-  top: auto;
-  color: #f4f4f4;
-  display: none;
-}
+article {
 
-h1 { /* 38/41 */
-  font-size: 4.6rem;
-}
-h1:before {
-  content: "#";
-  left: -1.0em;
-}
+  h1, h2, h3, h4, h5, h6 {
+    position: relative;
+    color: #111;
+    text-rendering: optimizeLegibility;
+  }
+  h1:before,
+  h2:before,
+  h3:before,
+  h4:before,
+  h5:before,
+  h6:before {
+    position: absolute;
+    top: auto;
+    color: #f4f4f4;
+    display: none;
+    @media (min-width: 768px) {
+      display: inline;
+    }
+  }
 
-h2 { /* 32/35 */
-  font-size: 3.8rem;
-}
-h2:before {
-  content: "##";
-  left: -1.75em;
-}
+  
 
-h3 { /* 24/26 */
-  font-size: 3.0rem;
-}
-h3:before {
-  content: "###";
-  left: -2.55em;
-}
+  h1 { /* 38/41 */
+    font-size: 4.6rem;
+  }
+  h1:before {
+    content: "#";
+    left: -1.0em;
+  }
 
-h4 { /* 18/19 */
-  font-size: 2.2rem;
-}
-h4:before {
-  content: "####";
-  left: -3.4em;
-}
+  h2 { /* 32/35 */
+    font-size: 3.8rem;
+  }
+  h2:before {
+    content: "##";
+    left: -1.75em;
+  }
 
-h5{ /* 14/15 */
-  font-size: 1.8rem;
-}
-h5:before {
-  content: "#####";
-  left: -4.3em;
-}
+  h3 { /* 24/26 */
+    font-size: 3.0rem;
+  }
+  h3:before {
+    content: "###";
+    left: -2.55em;
+  }
 
-h6 { /* 12/13 */
-  font-size: 1.6rem;
-}
-h6:before {
-  content: "######";
-  left: -5.10em;
-}
+  h4 { /* 18/19 */
+    font-size: 2.2rem;
+  }
+  h4:before {
+    content: "####";
+    left: -3.4em;
+  }
 
+  h5{ /* 14/15 */
+    font-size: 1.8rem;
+  }
+  h5:before {
+    content: "#####";
+    left: -4.3em;
+  }
+
+  h6 { /* 12/13 */
+    font-size: 1.6rem;
+  }
+  h6:before {
+    content: "######";
+    left: -5.10em;
+  }
+}
 
 /* Lists 
    ----- */
@@ -234,14 +248,5 @@ article .title {
 /* Responsive
    ---------- */
 
-@media (min-width: 768px) {
-  h1:before,
-  h2:before,
-  h3:before,
-  h4:before,
-  h5:before,
-  h6:before {
-    display: inline;
-  }
-}
+
 

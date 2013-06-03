@@ -1,0 +1,498 @@
+/***********************
+ * _pygments.scss file *
+ ***********************/
+.highlight .hll {
+  background-color: #ffffcc; }
+
+.highlight {
+  background: #f0f3f3; }
+
+.highlight .c {
+  color: #0099FF;
+  font-style: italic; }
+
+/* Comment */
+.highlight .err {
+  color: #AA0000;
+  background-color: #ffaaaa; }
+
+/* Error */
+.highlight .k {
+  color: #006699;
+  font-weight: bold; }
+
+/* Keyword */
+.highlight .o {
+  color: #555555; }
+
+/* Operator */
+.highlight .cm {
+  color: #0099FF;
+  font-style: italic; }
+
+/* Comment.Multiline */
+.highlight .cp {
+  color: #009999; }
+
+/* Comment.Preproc */
+.highlight .c1 {
+  color: #0099FF;
+  font-style: italic; }
+
+/* Comment.Single */
+.highlight .cs {
+  color: #0099FF;
+  font-weight: bold;
+  font-style: italic; }
+
+/* Comment.Special */
+.highlight .gd {
+  background-color: #FFCCCC;
+  border: 1px solid #cc0000; }
+
+/* Generic.Deleted */
+.highlight .ge {
+  font-style: italic; }
+
+/* Generic.Emph */
+.highlight .gr {
+  color: red; }
+
+/* Generic.Error */
+.highlight .gh {
+  color: #003300;
+  font-weight: bold; }
+
+/* Generic.Heading */
+.highlight .gi {
+  background-color: #CCFFCC;
+  border: 1px solid #00cc00; }
+
+/* Generic.Inserted */
+.highlight .go {
+  color: #aaaaaa; }
+
+/* Generic.Output */
+.highlight .gp {
+  color: #000099;
+  font-weight: bold; }
+
+/* Generic.Prompt */
+.highlight .gs {
+  font-weight: bold; }
+
+/* Generic.Strong */
+.highlight .gu {
+  color: #003300;
+  font-weight: bold; }
+
+/* Generic.Subheading */
+.highlight .gt {
+  color: #99cc66; }
+
+/* Generic.Traceback */
+.highlight .kc {
+  color: #006699;
+  font-weight: bold; }
+
+/* Keyword.Constant */
+.highlight .kd {
+  color: #006699;
+  font-weight: bold; }
+
+/* Keyword.Declaration */
+.highlight .kn {
+  color: #006699;
+  font-weight: bold; }
+
+/* Keyword.Namespace */
+.highlight .kp {
+  color: #006699; }
+
+/* Keyword.Pseudo */
+.highlight .kr {
+  color: #006699;
+  font-weight: bold; }
+
+/* Keyword.Reserved */
+.highlight .kt {
+  color: #007788;
+  font-weight: bold; }
+
+/* Keyword.Type */
+.highlight .m {
+  color: #ff6600; }
+
+/* Literal.Number */
+.highlight .s {
+  color: #cc3300; }
+
+/* Literal.String */
+.highlight .na {
+  color: #330099; }
+
+/* Name.Attribute */
+.highlight .nb {
+  color: #336666; }
+
+/* Name.Builtin */
+.highlight .nc {
+  color: #00AA88;
+  font-weight: bold; }
+
+/* Name.Class */
+.highlight .no {
+  color: #336600; }
+
+/* Name.Constant */
+.highlight .nd {
+  color: #9999ff; }
+
+/* Name.Decorator */
+.highlight .ni {
+  color: #999999;
+  font-weight: bold; }
+
+/* Name.Entity */
+.highlight .ne {
+  color: #CC0000;
+  font-weight: bold; }
+
+/* Name.Exception */
+.highlight .nf {
+  color: #cc00ff; }
+
+/* Name.Function */
+.highlight .nl {
+  color: #9999ff; }
+
+/* Name.Label */
+.highlight .nn {
+  color: #00CCFF;
+  font-weight: bold; }
+
+/* Name.Namespace */
+.highlight .nt {
+  color: #330099;
+  font-weight: bold; }
+
+/* Name.Tag */
+.highlight .nv {
+  color: #003333; }
+
+/* Name.Variable */
+.highlight .ow {
+  color: #000000;
+  font-weight: bold; }
+
+/* Operator.Word */
+.highlight .w {
+  color: #bbbbbb; }
+
+/* Text.Whitespace */
+.highlight .mf {
+  color: #ff6600; }
+
+/* Literal.Number.Float */
+.highlight .mh {
+  color: #ff6600; }
+
+/* Literal.Number.Hex */
+.highlight .mi {
+  color: #ff6600; }
+
+/* Literal.Number.Integer */
+.highlight .mo {
+  color: #ff6600; }
+
+/* Literal.Number.Oct */
+.highlight .sb {
+  color: #cc3300; }
+
+/* Literal.String.Backtick */
+.highlight .sc {
+  color: #cc3300; }
+
+/* Literal.String.Char */
+.highlight .sd {
+  color: #CC3300;
+  font-style: italic; }
+
+/* Literal.String.Doc */
+.highlight .s2 {
+  color: #cc3300; }
+
+/* Literal.String.Double */
+.highlight .se {
+  color: #CC3300;
+  font-weight: bold; }
+
+/* Literal.String.Escape */
+.highlight .sh {
+  color: #cc3300; }
+
+/* Literal.String.Heredoc */
+.highlight .si {
+  color: #aa0000; }
+
+/* Literal.String.Interpol */
+.highlight .sx {
+  color: #cc3300; }
+
+/* Literal.String.Other */
+.highlight .sr {
+  color: #33aaaa; }
+
+/* Literal.String.Regex */
+.highlight .s1 {
+  color: #cc3300; }
+
+/* Literal.String.Single */
+.highlight .ss {
+  color: #ffcc33; }
+
+/* Literal.String.Symbol */
+.highlight .bp {
+  color: #336666; }
+
+/* Name.Builtin.Pseudo */
+.highlight .vc {
+  color: #003333; }
+
+/* Name.Variable.Class */
+.highlight .vg {
+  color: #003333; }
+
+/* Name.Variable.Global */
+.highlight .vi {
+  color: #003333; }
+
+/* Name.Variable.Instance */
+.highlight .il {
+  color: #ff6600; }
+
+/* Literal.Number.Integer.Long */
+.type-csharp .highlight .k {
+  color: blue; }
+
+.type-csharp .highlight .kt {
+  color: blue; }
+
+.type-csharp .highlight .nf {
+  color: #000000;
+  font-weight: normal; }
+
+.type-csharp .highlight .nc {
+  color: #2b91af; }
+
+.type-csharp .highlight .nn {
+  color: black; }
+
+.type-csharp .highlight .s {
+  color: #a31515; }
+
+.type-csharp .highlight .sc {
+  color: #a31515; }
+
+/*******************
+ * _blog.scss file *
+ *******************
+
+______  __                       ______ ________________
+___  / / /___________ ______________  /____(_)__  /__  /
+__  /_/ /_  _ \_  __ `__ \__  __ \_  __ \_  /__  /__  / 
+_  __  / /  __/  / / / / /_  /_/ /  / / /  / _  / _  /  
+/_/ /_/  \___//_/ /_/ /_/_  .___//_/ /_//_/  /_/  /_/   
+                         /_/                            
+
+
+Greg Hemphill's Blog
+*/
+/* scaffolding */
+/* Typography
+   ---------- */
+/* Libre Baskerville from Font Squirrel http://www.fontsquirrel.com/fonts/libre-baskerville */
+@font-face {
+  font-family: 'LibreBaskervilleRegular';
+  src: url("/vendor/fonts/libre_baskerville/LibreBaskerville-Regular-webfont.eot");
+  src: url("/vendor/fonts/libre_baskerville/LibreBaskerville-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("/vendor/fonts/libre_baskerville/LibreBaskerville-Regular-webfont.woff") format("woff"), url("/vendor/fonts/libre_baskerville/LibreBaskerville-Regular-webfont.ttf") format("truetype"), url("/vendor/fonts/libre_baskerville/LibreBaskerville-Regular-webfont.svg#LibreBaskervilleRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'LibreBaskervilleItalic';
+  src: url("/vendor/fonts/libre_baskerville/LibreBaskerville-Italic-webfont.eot");
+  src: url("/vendor/fonts/libre_baskerville/LibreBaskerville-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("/vendor/fonts/libre_baskerville/LibreBaskerville-Italic-webfont.woff") format("woff"), url("/vendor/fonts/libre_baskerville/LibreBaskerville-Italic-webfont.ttf") format("truetype"), url("/vendor/fonts/libre_baskerville/LibreBaskerville-Italic-webfont.svg#LibreBaskervilleItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'LibreBaskervilleBold';
+  src: url("/vendor/fonts/libre_baskerville/LibreBaskerville-Bold-webfont.eot");
+  src: url("/vendor/fonts/libre_baskerville/LibreBaskerville-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("/vendor/fonts/libre_baskerville/LibreBaskerville-Bold-webfont.woff") format("woff"), url("/vendor/fonts/libre_baskerville/LibreBaskerville-Bold-webfont.ttf") format("truetype"), url("/vendor/fonts/libre_baskerville/LibreBaskerville-Bold-webfont.svg#LibreBaskervilleBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  /* 14/20 */
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-family: 'LibreBaskervilleRegular', 'Georgia Pro', georgia, serif; }
+
+b, strong, .bold {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'LibreBaskervilleBold', 'Georgia Pro', georgia, serif; }
+
+i, em, .italic {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'LibreBaskervilleItalic', 'Georgia Pro', georgia, serif; }
+
+/* all combinations of bold and italic being inside each other */
+b i, b em, b .italic,
+strong i, strong em, strong .italic,
+.bold i, .bold em, .bold .italic,
+i strong, i b, i .bold,
+em strong, em b, em .bold,
+.italic strong, .italic b, .italic .bold {
+  font-weight: bold;
+  font-style: normal;
+  font-family: 'LibreBaskervilleItalic', 'Georgia Pro', georgia, serif; }
+
+/* Headings 
+   -------- */
+article h1 {
+  font-weight: bold; }
+
+/* Exposed Markdown inspired by Mark Otto's blog http://markdotto.com */
+article h1, article h2, article h3, article h4, article h5, article h6 {
+  position: relative;
+  color: #111;
+  text-rendering: optimizeLegibility; }
+article h1:before,
+article h2:before,
+article h3:before,
+article h4:before,
+article h5:before,
+article h6:before {
+  position: absolute;
+  top: auto;
+  color: #f4f4f4;
+  display: none; }
+  @media (min-width: 768px) {
+    article h1:before,
+    article h2:before,
+    article h3:before,
+    article h4:before,
+    article h5:before,
+    article h6:before {
+      display: inline; } }
+article h1 {
+  /* 38/41 */
+  font-size: 4.6rem; }
+article h1:before {
+  content: "#";
+  left: -1.0em; }
+article h2 {
+  /* 32/35 */
+  font-size: 3.8rem; }
+article h2:before {
+  content: "##";
+  left: -1.75em; }
+article h3 {
+  /* 24/26 */
+  font-size: 3.0rem; }
+article h3:before {
+  content: "###";
+  left: -2.55em; }
+article h4 {
+  /* 18/19 */
+  font-size: 2.2rem; }
+article h4:before {
+  content: "####";
+  left: -3.4em; }
+article h5 {
+  /* 14/15 */
+  font-size: 1.8rem; }
+article h5:before {
+  content: "#####";
+  left: -4.3em; }
+article h6 {
+  /* 12/13 */
+  font-size: 1.6rem; }
+article h6:before {
+  content: "######";
+  left: -5.10em; }
+
+/* Lists 
+   ----- */
+ul {
+  margin-left: -0.5rem; }
+
+ul > li {
+  padding-left: 0.5rem; }
+
+ol {
+  margin-left: -0.65rem; }
+
+ol > li {
+  padding-left: 0.65rem; }
+
+blockquote {
+  padding: 0 0 0 1.75rem;
+  margin: 0 3rem 1.5rem -2.2rem;
+  color: #999;
+  border-left: .5rem solid #e5e5e5; }
+
+/* code
+   ---- */
+pre {
+  font-size: 1.6rem;
+  /*padding-left: 1.7rem;*/
+  padding-right: 1.7rem;
+  margin-left: -5rem;
+  margin-right: -1.7rem;
+  border: 0;
+  background: #f9f9f9; }
+
+/*.container {
+  border-left: 1px solid #333;
+}*/
+.lineno {
+  width: 32px;
+  /*padding-right: 5px;
+  border-right: 1px solid #ccc;*/
+  display: inline-block;
+  white-space: nowrap;
+  text-align: right;
+  color: #ccc; }
+
+/* Posts 
+   ----- */
+.articles article {
+  padding-bottom: 30px;
+  margin-bottom: 90px;
+  border-bottom: 4px double #eee; }
+
+article {
+  margin: 0 auto;
+  max-width: 696px; }
+
+article .title {
+  margin-bottom: 0; }
+
+.author,
+.published_on {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 1.4rem; }
+
+.by_line {
+  margin-bottom: 20px;
+  font-family: 'LibreBaskervilleItalic', 'Georgia Pro', georgia, serif;
+  font-size: 1.4rem; }
+
+/* Responsive
+   ---------- */
