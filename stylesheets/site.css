@@ -1,3 +1,5 @@
+@import url(../../vendor/bootstrap/css/bootstrap.css);
+@import url(../../vendor/data_tables/data_tables_for_bootstrap.css);
 /***********************
  * _pygments.scss file *
  ***********************/
@@ -308,10 +310,17 @@ _  __  / /  __/  / / / / /_  /_/ /  / / /  / _  / _  /
 
 Greg Hemphill's Blog
 */
-/* scaffolding */
+/* scaffolding
+   =========== */
+body {
+  padding-top: 70px; }
+
+/* for Navbar */
 /* Typography
-   ---------- */
-/* Libre Baskerville from Font Squirrel http://www.fontsquirrel.com/fonts/libre-baskerville */
+   ========== */
+/* Libre Baskerville 
+   -----------------
+   from Font Squirrel http://www.fontsquirrel.com/fonts/libre-baskerville */
 @font-face {
   font-family: 'LibreBaskervilleRegular';
   src: url("/vendor/fonts/libre_baskerville/LibreBaskerville-Regular-webfont.eot");
@@ -496,3 +505,9 @@ article .title {
 
 /* Responsive
    ---------- */
+/* Components
+   ========== */
+/* Navbar
+   ------ */
+.navbar {
+  opacity: 0.9; }

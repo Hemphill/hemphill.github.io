@@ -1,3 +1,6 @@
-// sass --watch stylesheets/scss/site.scss:stylesheets/site.css
-@import "pygment";
-@import "blog";
+// SCSS Manifest File
+// This file 
+@import "../../vendor/bootstrap/css/bootstrap.css";
+@import "_pygment";
+@import "../../vendor/data_tables/data_tables_for_bootstrap.css";
+@import "_blog";

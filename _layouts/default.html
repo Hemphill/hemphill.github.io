@@ -7,8 +7,7 @@
     <title>{{ page.title }}</title>
     <meta name="description" content="Greg Hemphill's Blog" />
     <meta name="viewport" content="width=device-width,user-scalable=yes" />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="/vendor/bootstrap/css/bootstrap.css">
+    
     <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/site.css">
   </head>
 
@@ -18,6 +17,9 @@
       {{ content }}
       {% include footer.html %}
     </div>
+
+    {% include scripts.html %}
+
     {% include analytics.html %}
   </body>
 </html>
