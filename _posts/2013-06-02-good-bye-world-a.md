@@ -1,7 +1,6 @@
 ---
 title: "Goodbye World a"
-layout: post
-list_layout: post
+layout: article
 author: "Greg Hemphill"
 ---
 

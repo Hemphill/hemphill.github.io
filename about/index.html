@@ -3,29 +3,9 @@ layout: default
 title: Archive
 ---
 
-<ul>
-{% for post in site.posts %}
-  <li>
-    {{ post.date | date: "%b %d, %Y"  }} &mdash; <a href="{{ post.url }}">{{ post.title }}</a>
-  </li>
-{% endfor %}
-</ul>
-
-<table class="table table-striped table-bordered" data-table="true">
-  <thead>
-    <tr>
-      <th>Date</th>
-      <th>Title</th>
-    </tr>
-  </thead>
-  <tbody>
-  {% for post in site.posts %}
-    <tr>
-      <td>{{ post.date | date: "%b %d, %Y"  }}</td>
-      <td><a href="{{ post.url }}">{{ post.title }}</a></td>
-    </tr>
-  {% endfor %}
-  </tbody>
-</table>
+<p>
+  Full stack web geek, pragmatic programmer, responsive designer, single hot dad, 
+  occasional artist, amateur photographer and VP of Development at Webstop.
+</p>
 
 

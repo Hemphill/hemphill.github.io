@@ -57,10 +57,30 @@ body { padding-top: 70px; } /* for Navbar */
   font-style: normal;
 }
 
+html {
+  font-size: 8px;
+  @media (min-width: 480px) {
+    font-size: 9px;
+  }
+  @media (min-width: 768px) {
+    font-size: 10px;
+  }
+}
+
 body { /* 14/20 */
   font-size: 1.8rem;
   line-height: 2.8rem;
   font-family: 'LibreBaskervilleRegular', 'Georgia Pro', georgia, serif;
+  @media (min-width: 480px) {
+    line-height: 2.9rem;
+  }
+  @media (min-width: 768px) {
+    line-height: 3.0rem;
+  }
+}
+
+p, li {
+  margin-top: 1.5rem;
 }
 
 b, strong, .bold {
@@ -125,6 +145,7 @@ article {
 
   h1 { /* 38/41 */
     font-size: 4.6rem;
+    line-height: 5.6rem;
   }
   h1:before {
     content: "#";

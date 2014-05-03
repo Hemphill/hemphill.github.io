@@ -1,13 +1,4 @@
-
-/*
-
-WEBSTOP NOTE:
-Added the TABLE DATA-API starting on line 168.
-
-*/
-
-
-
+/* NOTE: the 1.10 version of DataTables is wayyyy better. Should upgrade! */
 
 
 /* Set the defaults for DataTables initialisation */
@@ -172,7 +163,10 @@ if ( $.fn.DataTable.TableTools ) {
 $(function () {
 	$(window).on('load', function () {
     $('[data-table]').each(function () {
-    	$(this).dataTable();
+    	$(this).dataTable({
+        "iDisplayLength": 100,
+        "bLengthChange": false
+      });
       $('.dataTables_filter input[type=text]').addClass('form-control');
     });
   });
