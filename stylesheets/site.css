@@ -404,67 +404,77 @@ em strong, em b, em .bold,
 
 /* Headings 
    -------- */
-article h1 {
+article h1, .articles_index h1 {
   font-weight: bold; }
 
 /* Exposed Markdown inspired by Mark Otto's blog http://markdotto.com */
-article h1, article h2, article h3, article h4, article h5, article h6 {
+article h1, .articles_index h1, article h2, .articles_index h2, article h3, .articles_index h3, article h4, .articles_index h4, article h5, .articles_index h5, article h6, .articles_index h6 {
   position: relative;
   color: #111;
   text-rendering: optimizeLegibility; }
-article h1:before,
+article h1:before, .articles_index h1:before,
 article h2:before,
+.articles_index h2:before,
 article h3:before,
+.articles_index h3:before,
 article h4:before,
+.articles_index h4:before,
 article h5:before,
-article h6:before {
+.articles_index h5:before,
+article h6:before,
+.articles_index h6:before {
   position: absolute;
   top: auto;
   color: #f4f4f4;
   display: none; }
   @media (min-width: 768px) {
-    article h1:before,
+    article h1:before, .articles_index h1:before,
     article h2:before,
+    .articles_index h2:before,
     article h3:before,
+    .articles_index h3:before,
     article h4:before,
+    .articles_index h4:before,
     article h5:before,
-    article h6:before {
+    .articles_index h5:before,
+    article h6:before,
+    .articles_index h6:before {
       display: inline; } }
-article h1 {
+article h1, .articles_index h1 {
   /* 38/41 */
   font-size: 4.6rem;
   line-height: 5.6rem; }
-article h1:before {
+article h1:before, .articles_index h1:before {
   content: "#";
   left: -1.0em; }
-article h2 {
+article h2, .articles_index h2 {
   /* 32/35 */
   font-size: 3.8rem; }
-article h2:before {
+article h2:before, .articles_index h2:before {
   content: "##";
   left: -1.75em; }
-article h3 {
+article h3, .articles_index h3 {
   /* 24/26 */
   font-size: 3.0rem; }
-article h3:before {
+article h3:before, .articles_index h3:before {
   content: "###";
   left: -2.55em; }
-article h4 {
+article h4, .articles_index h4 {
   /* 18/19 */
   font-size: 2.2rem; }
-article h4:before {
+article h4:before, .articles_index h4:before {
   content: "####";
   left: -3.4em; }
-article h5 {
+article h5, .articles_index h5 {
   /* 14/15 */
   font-size: 1.8rem; }
-article h5:before {
+article h5:before, .articles_index h5:before {
   content: "#####";
   left: -4.3em; }
-article h6 {
+article h6, .articles_index h6 {
   /* 12/13 */
   font-size: 1.6rem; }
-article h6:before {
+article h6:before, .articles_index h6:before {
   content: "######";
   left: -5.10em; }
 
@@ -513,16 +523,16 @@ pre {
 
 /* Posts 
    ----- */
-.articles article {
+.articles article, .articles .articles_index {
   padding-bottom: 30px;
   margin-bottom: 90px;
   border-bottom: 4px double #eee; }
 
-article {
+article, .articles_index {
   margin: 0 auto;
   max-width: 696px; }
 
-article .title {
+article .title, .articles_index .title {
   margin-bottom: 0; }
 
 .author,
@@ -545,3 +555,62 @@ article .title {
    ------ */
 .navbar {
   opacity: 0.95; }
+
+/* Footer 
+   ------ */
+footer {
+  margin: 0;
+  padding: 20px;
+  border-top: 1px solid #036;
+  background: #4A525A;
+  text-align: center; }
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  display: inline-block; }
+
+footer li {
+  margin: 20px;
+  padding: 0;
+  list-style: none;
+  display: inline-block; }
+
+footer a,
+footer p {
+  color: #999; }
+
+footer a:hover {
+  color: #9cf; }
+
+footer a {
+  font-size: 1.5rem;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+/* Home Page
+   ========= */
+.more_articles {
+  margin: 0;
+  padding: 0; }
+
+.more_articles li {
+  margin: 5px;
+  padding: 0;
+  list-style: none; }
+
+/* About Page
+   ========== */
+.about_picture {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 320px; }
+  @media (min-width: 480px) {
+    .about_picture {
+      margin: 20px auto;
+      float: right;
+      width: 50%;
+      border-radius: 5px; } }
+  @media (min-width: 768px) {
+    .about_picture {
+      margin: 20px;
+      width: 320px; } }

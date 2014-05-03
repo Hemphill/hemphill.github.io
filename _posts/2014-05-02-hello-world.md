@@ -18,6 +18,7 @@ want to "keep it real" by quoting 'things' that shouldn't be quoted.
 > This is a mother f\*@king block quote! With lots of clever stuff to say, and 
 > that's why we are quoting it! Might even use some hot ellipsis... mind, blown!
 
+![statue of a man in St. Petersburg, FL](/images/posts/2014-05-02-hello-world/stpete_1024x685.jpeg)
 
 ### This is a Level Three Header
 

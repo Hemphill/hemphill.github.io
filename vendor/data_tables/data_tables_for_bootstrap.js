@@ -164,6 +164,7 @@ $(function () {
 	$(window).on('load', function () {
     $('[data-table]').each(function () {
     	$(this).dataTable({
+        "aaSorting": [[0,'desc']],
         "iDisplayLength": 100,
         "bLengthChange": false
       });
