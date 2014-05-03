@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Greg Hemphill's Blog
+title: "Greg Hemphill's Blog"
 ---
 <section class="articles">
   {% for post in site.posts limit:10 %}
-    {% include listed-post.html %}
+    {% include article.html %}
   {% endfor %}
 </section>
 

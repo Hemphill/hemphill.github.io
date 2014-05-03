@@ -1,6 +1,7 @@
 ---
 title: "Hello World"
 layout: post
+list_layout: post
 author: "Greg Hemphill"
 ---
 

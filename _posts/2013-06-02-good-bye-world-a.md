@@ -1,5 +1,5 @@
 ---
-title: "Goodbye World"
+title: "Goodbye World a"
 layout: post
 list_layout: post
 author: "Greg Hemphill"

@@ -12,7 +12,7 @@ Added the TABLE DATA-API starting on line 168.
 
 /* Set the defaults for DataTables initialisation */
 $.extend( true, $.fn.dataTable.defaults, {
-	"sDom": "<'row-fluid'<'span6'l><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>",
+	"sDom": "<'row'<'col-sm-6'l><'col-sm-6'f>r>t<'row'<'col-sm-6'i><'col-sm-6'p>>",
 	"sPaginationType": "bootstrap",
 	"oLanguage": {
 		"sLengthMenu": "_MENU_ records per page"
@@ -53,10 +53,10 @@ $.extend( $.fn.dataTableExt.oPagination, {
 				}
 			};
 
-			$(nPaging).addClass('pagination').append(
-				'<ul>'+
-					'<li class="prev disabled"><a href="#">&larr; '+oLang.sPrevious+'</a></li>'+
-					'<li class="next disabled"><a href="#">'+oLang.sNext+' &rarr; </a></li>'+
+			$(nPaging).append(
+				'<ul class="pagination">'+
+					'<li class="prev disabled"><a href="#">◀</a></li>'+
+					'<li class="next disabled"><a href="#">▶</a></li>'+
 				'</ul>'
 			);
 			var els = $('a', nPaging);
@@ -160,7 +160,7 @@ if ( $.fn.DataTable.TableTools ) {
 /* Table initialisation */
 // $(document).ready(function() {
 // 	$('#example').dataTable( {
-// 		"sDom": "<'row-fluid'<'span6'l><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>",
+// 		"sDom": "<'row'<'col-sm-6'l><'col-sm-6'f>r>t<'row'<'col-sm-6'i><'col-sm-6'p>>",
 // 		"sPaginationType": "bootstrap",
 // 		"oLanguage": {
 // 			"sLengthMenu": "_MENU_ records per page"
@@ -173,6 +173,7 @@ $(function () {
 	$(window).on('load', function () {
     $('[data-table]').each(function () {
     	$(this).dataTable();
+      $('.dataTables_filter input[type=text]').addClass('form-control');
     });
   });
 });
