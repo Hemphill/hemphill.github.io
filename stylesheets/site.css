@@ -547,6 +547,9 @@ article .title, .articles_index .title {
   font-family: 'LibreBaskervilleItalic', 'Georgia Pro', georgia, serif;
   font-size: 1.4rem; }
 
+article img, .articles_index img {
+  max-width: 100%; }
+
 /* Responsive
    ---------- */
 /* Components
